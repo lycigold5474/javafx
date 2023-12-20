@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+<!--    <Label fx:id="welcomeText"/>-->
+<!--    <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
+    <HBox spacing="10.0">
+        <TextField fx:id="inputField" promptText="Enter text"/>
+        <Button text="Execute" onAction="#onExecuteButtonClick"/>
+    </HBox>
+
+    <!-- 두 번째 줄: 네 개의 버튼 -->
+    <HBox spacing="10.0">
+        <Button text="Naver" onAction="#onButton1Click" styleClass="naver-button"/>
+        <Button text="Button 2" onAction="#onButton2Click"/>
+        <Button text="Button 3" onAction="#onButton3Click"/>
+        <Button text="Button 4" onAction="#onButton4Click"/>
+    </HBox>
+
+    <TextArea fx:id="outputArea" editable="false" wrapText="true"/>
+</VBox>
